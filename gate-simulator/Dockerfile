@@ -1,6 +1,6 @@
 FROM node:8.16.2-alpine
 WORKDIR ./opt/app
-COPY package.json package-lock.json data.json ./
+COPY . .
 RUN npm install
 COPY . ./
 CMD ["npm", "start"]
